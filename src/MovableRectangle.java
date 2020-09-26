@@ -69,11 +69,7 @@ class MovableRectangle implements Movable {
         for (int i = 0; i <= 5; i++) {
             this.setX1(getX1() + getMovecounter())
                     .setX2(getX2() + getMovecounter());
-            System.out.println("Перемещение вершин: ");
-            System.out.print(getX1() + " ");
-            System.out.println(getY1());
-            System.out.print(getX2() + " ");
-            System.out.println(getY2());
+            System.out.printf("Перемещение вершин:%nx1: %d y1: %d x2: %d y2: %d%n", getX1(), getY1(), getX2(), getY2());
         }
     }
 
